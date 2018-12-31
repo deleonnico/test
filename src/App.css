@@ -1,0 +1,43 @@
+.navbar {
+    padding: 0;
+    height: 50px;
+    width: 100%;
+}
+
+.navbar-brand {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0;
+    font-size: 25px;
+}
+
+.navbar-nav {
+    height: 100%;
+    width: 100%;
+}
+
+.nav-link {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.nav-link {
+    width: 120px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.main-page {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.login-form {
+    padding: 20px;
+    border-left: 2px solid #333;
+}
+
+.sign-up {
+    margin-top: 100px;
+}
