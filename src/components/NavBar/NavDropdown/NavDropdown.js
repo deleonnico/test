@@ -5,19 +5,29 @@ class NavDropdown extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isToggleOn: false
+            open: false
         };
     }
     showDropdown(e) {
-        e.preventDefault();
-        this.setState(prevState => ({isToggleOn: !prevState.isToggleOn}));
+        console.log(e.detail);
+        //console.log(e.type === 'click');
+        if (e.type === 'click') { 
+            e.preventDefault();
+            this.setState(prevState => ({open: !prevState.open}));
+        }
+    }
+
+    onBlurFunc(e) {
+        console.log(e.details);
+        this.setState({open: !this.state.open})
     }
 
     render() {
-        const classDropdownMenu = 'dropdown-menu' + (this.state.isToggleOn ? ' show' : '');
+        const classDropdownMenu = 'dropdown-menu' + (this.state.open ? ' show' : '');
         return (
             <li className='nav-item dropdown'>
-                <a className='nav-link dropdown-toggle' href='/' onClick = {e => { this.showDropdown(e);}}>
+                <a className='nav-link dropdown-toggle' href='/' onClick = {e => { this.showDropdown(e);}} 
+                onBlur = {e => { this.onBlurFunc(e);}}>
                     {this.props.name}
                 </a>
                 
