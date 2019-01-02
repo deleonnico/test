@@ -2,6 +2,7 @@
     padding: 0;
     height: 50px;
     width: 100%;
+    background-color: #0071e0;
 }
 
 .navbar-brand {
@@ -9,6 +10,11 @@
     margin-right: 50px;
     padding: 0;
     font-size: 25px;
+    color: whitesmoke;
+}
+
+.navbar-brand:hover {
+    color: whitesmoke;
 }
 
 .navbar-nav {
@@ -17,14 +23,16 @@
 }
 
 .nav-link {
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.nav-link {
     width: 120px;
     font-size: 18px;
     text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: white;
+}
+
+.nav-link:hover {
+    color: whitesmoke;
 }
 
 .main-page {
@@ -36,6 +44,16 @@
 .login-form {
     padding: 20px;
     border-left: 2px solid #333;
+}
+
+.btn {
+    color: white;
+    background-color: #0071e0;
+}
+
+.btn:hover {
+    color: whitesmoke;
+    background-color: #1b64ab;
 }
 
 .sign-up {

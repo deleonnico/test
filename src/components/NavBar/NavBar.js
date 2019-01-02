@@ -5,7 +5,7 @@ import NavMenu from './NavMenu/NavMenu';
 function NavBar() {
     return (
         <header className='main-header row'>
-            <nav className='navbar navbar-expand-sm navbar-dark bg-dark shadow'>
+            <nav className='navbar navbar-expand-sm shadow'>
                 <div className='col-4'>
                     <NavBrand />
                 </div>
