@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-//Handles the state and shows the dropdown menu
+//Handles the state and shows/hides the dropdown menu
 class NavDropdown extends Component {
     constructor(props) {
         super(props);
@@ -16,8 +16,11 @@ class NavDropdown extends Component {
     }
 
     onBlurFunc(e) {
-        console.log('onBlurFunc() called');
-        this.setState(prevState => ({open: !prevState.open}));
+        console.log(this.state.open);
+        if (this.state.open === true) {
+            console.log('onBlurFunc() called');
+            this.setState(prevState => ({open: !prevState.open}));
+        }
     }
 
     render() {
