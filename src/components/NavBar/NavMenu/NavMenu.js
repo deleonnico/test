@@ -8,18 +8,18 @@ function NavMenu() {
         <div className='nav-menu'>
             <ul className='navbar-nav'>
                 <NavItem path='/WhyUCC' item='WhyUCC?' />
-                <NavDropdown name='Products' id='1'>
+                <NavDropdown name='Products'>
                     <NavDropdownItem item='Product 1' />
                     <NavDropdownItem item='Product 2' />
                     <NavDropdownItem item='Product 3' />
                 </NavDropdown>
-                <NavDropdown name='Pricing' id='2'>
+                <NavDropdown name='Pricing'>
                     <NavDropdownItem item='Pricing 1' />
                     <NavDropdownItem item='Pricing 2' />
                     <NavDropdownItem item='Pricing 3' />
                     <NavDropdownItem item='Pricing 4' />
                 </NavDropdown>
-                <NavDropdown name='Account' id='3'>
+                <NavDropdown name='Account'>
                     <NavDropdownItem item='Settings' />
                     <NavDropdownItem item='Help' />
                 </NavDropdown>
