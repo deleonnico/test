@@ -8,18 +8,16 @@ class NavDropdown extends Component {
             open: false
         };
     }
+
     showDropdown(e) {
-        console.log(e.detail);
-        //console.log(e.type === 'click');
-        if (e.type === 'click') { 
-            e.preventDefault();
-            this.setState(prevState => ({open: !prevState.open}));
-        }
+        console.log('showDropdown() called');
+        e.preventDefault();
+        this.setState(prevState => ({open: !prevState.open}));
     }
 
     onBlurFunc(e) {
-        console.log(e.details);
-        this.setState({open: !this.state.open})
+        console.log('onBlurFunc() called');
+        this.setState(prevState => ({open: !prevState.open}));
     }
 
     render() {
